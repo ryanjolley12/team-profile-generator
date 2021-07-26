@@ -1,10 +1,9 @@
 
-const { TestWatcher } = require("@jest/core")
 const { expect } = require("@jest/globals")
 const Engineer = require("../lib/Engineer")
 
 test('create new engineer', () => {
-    const eengineer = new Engineer('Kayla')
+    const engineer = new Engineer('Kayla')
     expect(engineer.user).toMatch('Kayla')
     expect(engineer.id).toEqual(expect.any(String));
     expect(engineer.email).toEqual(expect.any(String));

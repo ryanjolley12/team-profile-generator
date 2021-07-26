@@ -1,4 +1,4 @@
-const { test, expect } = reequire("@jest/globals");
+const { test, expect } = require("@jest/globals");
 const Manager = require("../lib/Manager");
 
 test("create new manager", () => {
