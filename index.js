@@ -1,8 +1,6 @@
 // runs the application 
 
 // TDD RED, GREEEN, REFACTOR
-
-console.log("test")
 const inquirer = require("inquirer");
 const Manager = require("./lib/Manager");
 const Intern = require("./lib/Intern");
@@ -32,12 +30,12 @@ const getInfo = function () {
           {
             type: "text",
             name: "user",
-            message: "What is this employees name?",
+            message: "What is the employee's name?",
             validate: (user) => {
               if (user) {
                 return true;
               } else if (!user) {
-                console.log("Please enter required information");
+                console.log("Enter required information");
                 return false;
               }
             },
@@ -45,12 +43,12 @@ const getInfo = function () {
           {
             type: "text",
             name: "id",
-            message: "What is this employees ID number?",
+            message: "What is the employee's ID number?",
             validate: (id) => {
               if (id) {
                 return true;
               } else if (!id) {
-                console.log("Please enter required information");
+                console.log("Enter required information");
                 return false;
               }
             },
@@ -71,13 +69,13 @@ const getInfo = function () {
           {
             type: "text",
             name: "number",
-            message: "What is this employees office number?", 
+            message: "What is the employee's office number?", 
             when: (data) => data.role === "Manager",   //manager specific
             validate: (number) => {
               if (number) {
                 return true;
               } else if (!number) {
-                console.log("Please enter required information");
+                console.log("Enter required information");
                 return false;
               }
             },
@@ -85,13 +83,13 @@ const getInfo = function () {
           {
             type: "text",
             name: "github",
-            message: "Please enter this employees github name", 
+            message: "What is the employee's github?", 
             when: (data) => data.role === "Engineer",   //engineer specific
             validate: (github) => {
               if (github) {
                 return true;
               } else if (!github) {
-                console.log("Please enter required information");
+                console.log("Enter required information");
                 return false;
               }
             },
@@ -99,13 +97,13 @@ const getInfo = function () {
           {
             type: "text",
             name: "school",
-            message: "Please enter this employees school name", 
+            message: "What is the employee's school name?", 
             when: (data) => data.role === "Intern",   //intern specific
             validate: (school) => {
               if (school) {
                 return true;
               } else if (!school) {
-                console.log("Please enter required information");
+                console.log("Enter required information");
                 return false;
               }
             },
