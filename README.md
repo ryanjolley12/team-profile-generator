@@ -21,3 +21,6 @@ Ryan Jolley 2021
 
 https://user-images.githubusercontent.com/83616082/127548732-1629b79d-d617-444b-a80f-ab6fc5bd0b1b.mp4
 
+## Collaborators
+Ben Gallagher @bgallag
+Dana Bottomi @dbottoni
