@@ -1,4 +1,4 @@
-const { test, expect } = require("@jest/globals")
+
 const Employee = require ('../lib/Employee')
 
 test('create new Employee', () => {
@@ -6,4 +6,4 @@ test('create new Employee', () => {
 
     expect(employee.user).toBe('Ryan')
     expect(employee.user).toEqual(expect.any(String))
-})
+});

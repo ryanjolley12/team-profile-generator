@@ -18,4 +18,10 @@ First, clone or fork this repository. Then open in your external termal and type
 Ryan Jolley 2021
 
 ## Tests
-![](Untitled_Jul 29, 2021 2_31 PM.gif)
+
+
+https://user-images.githubusercontent.com/83616082/127548732-1629b79d-d617-444b-a80f-ab6fc5bd0b1b.mp4
+
+## Collaborators
+Ben Gallagher @bgallag
+Dana Bottomi @dbottoni
