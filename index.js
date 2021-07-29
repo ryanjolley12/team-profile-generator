@@ -1,12 +1,12 @@
 // runs the application 
 
 // TDD RED, GREEEN, REFACTOR
+const fs = require("fs");
 const inquirer = require("inquirer");
+const createHTML = require("./src/template")
 const Manager = require("./lib/Manager");
 const Intern = require("./lib/Intern");
 const Engineer = require("./lib/Engineer");
-const writeHTML = require("./src/page-template");
-const fs = require("fs");
 
 const team = [];
 
@@ -146,7 +146,7 @@ const getInfo = function () {
         if (err) {
           console.log(err);
         } else {
-          console.log("Its working its working!!");
+          console.log("YAS IT WORKS!");
         }
       });
     };
@@ -155,13 +155,11 @@ const getInfo = function () {
     
     getInfo()
       .then(team => {
-        return writeHTML(team);
+        return createHTML(team);
       })
       .then((pageHTML) => {
         printPage(pageHTML);
       })
-      .catch((err) => {
-        if (err) {
+      .catch(err => {
           console.log(err);
-        }3
-      });
+        });
