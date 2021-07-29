@@ -1,11 +1,9 @@
 
-const { expect } = require("@jest/globals")
 const Engineer = require("../lib/Engineer")
 
 test('create new engineer', () => {
     
-    const engineer = new Engineer('Kayla')
-    expect(engineer.user).toMatch('Kayla')
+    const engineer = new Engineer('Ryan')
     expect(engineer.id).toEqual(expect.any(String));
     expect(engineer.email).toEqual(expect.any(String));
     expect(engineer.github).toEqual(expect.any(String));
